@@ -1,0 +1,12 @@
+Source: dde-preload
+Section: devel
+Priority: optional
+Maintainer: Deepin Packages Builder <packages@deepin.com>
+Build-Depends: debhelper (>=9), qt5-qmake
+Standards-Version: 3.9.8
+
+Package: dde-preload
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Preload DDE
+ dde-desktop dde-session-daemon deepin-wm.

@@ -1,0 +1,11 @@
+#!/bin/sh
+#sleep 1
+
+if [ "$1" = run ]; then
+    dde-desktop --preload
+    /usr/lib/deepin-daemon/dde-session-daemon
+    DISPLAY="" deepin-wm
+    exit 0
+else
+    sh "$0" run &
+fi
